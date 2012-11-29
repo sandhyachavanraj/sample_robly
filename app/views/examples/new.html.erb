@@ -1,0 +1,5 @@
+<%= simple_form_for @user, url: examples_path, method: 'post'  do |user| %>    
+  <h5> Username & Address </h5>
+  <%= user.input :username %>
+  <%= user.button :button, 'Register', class: 'btn btn-success btn-large sign_up_btn' %>
+<% end %>
